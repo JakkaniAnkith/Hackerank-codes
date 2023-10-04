@@ -1,0 +1,8 @@
+n=int(input())
+a=list(map(int,input().split()))
+ca=0
+ma=0
+for i in range(n):
+    ca+=a[i]
+    ma=max(ma,ca)
+print(ma)
