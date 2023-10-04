@@ -1,0 +1,8 @@
+n=int(input())
+a=list(map(int,input().split()))
+d=[]
+for i in a:
+    c=a.count(i)
+    if(c==1):
+        d.append(i)
+print(*d,sep=" ")
