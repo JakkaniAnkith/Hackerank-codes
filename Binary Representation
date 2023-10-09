@@ -1,0 +1,12 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    d=[]
+    if(a==0):
+        print('0')
+    else:
+        while(a):
+            c=a%2
+            d.append(c)
+            a=a//2
+        print(*d[::-1],sep='')
