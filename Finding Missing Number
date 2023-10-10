@@ -1,0 +1,7 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    ar=list(map(int,input().split()))
+    b=((a+1)*(a+2))//2
+    ar=sum(ar)
+    print(b-ar)
