@@ -1,0 +1,15 @@
+n=int(input())
+m = 0
+c = 0
+while n > 0 and n % 2 == 0:
+    n //= 2
+while n > 0:
+    remainder = n % 2
+    if remainder == 0:
+        c += 1
+    else:
+        if c != 0:
+            m = max(c, m)
+            c = 0
+    n //= 2
+print(m)
